@@ -84,10 +84,10 @@ Basically, it is the same logic for single elevators extended to chose the best 
 Next Steps
 ----------
 To convert to a REST application, we can have the below services
--1. /v1/createElevators : The request params to this will be the umber of elevators and the number of floors to the building
--2. /v1/requestElevator: This will contain the start and end floor of the request
--3. /v1/showElevatorStatus: This will show the elevator info. Query parameter will be the elevator id
--4. /v1/realTimeElevatorInfo : This wil show the all the current elevator logs so far. For this the change we will have to do in the backend is that
+- 1. /v1/createElevators : The request params to this will be the umber of elevators and the number of floors to the building
+- 2. /v1/requestElevator: This will contain the start and end floor of the request
+- 3. /v1/showElevatorStatus: This will show the elevator info. Query parameter will be the elevator id
+- 4. /v1/realTimeElevatorInfo : This wil show the all the current elevator logs so far. For this the change we will have to do in the backend is that
    instead of printing logs to console collect them into some object and return that object back to the calling request
    
     
