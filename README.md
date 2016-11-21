@@ -11,41 +11,41 @@ It will take upto 30-40 seconds to run all tests
 
 Run
 ====
-mvn exec:java
-First select the number of elevators you would like to simulate and the floors in the building.
-Then select the actions you would like to perform.
-1. Know the status of the elevator
-2. Call an elevator by entering the starting and ending floor
+- mvn exec:java
+- First select the number of elevators you would like to simulate and the floors in the building.
+- Then select the actions you would like to perform.
+- 1. Know the status of the elevator
+- 2. Call an elevator by entering the starting and ending floor
 
 Expected Output
 -------------- 
-Enter the number of elevators you want: <Enter a number between 1 and upto 10> 1
-Enter the number of floors in the building: <Enter a number more than 1> 20
-Select a choice from below: 
-1. Find out Status of elevator 
-2. Schedule an elevator 
-3. Exit the system(or press ctnrl + c 
-<Enter choice> 2
-Enter start floor: 
-2
-Enter end floor: 
-20
-Elevator 1 STATUS:RUNNING currentFloor1 nextFloor:[2, 20] direction:UP
-Elevator 1 STATUS:RUNNING currentFloor2 nextFloor:[2, 20] direction:UP
-Elevator 1 STATUS:OPEN currentFloor:2 direction:UP
-Elevator 1 STATUS:CLOSE currentFloor:2 direction:UP
-Elevator 1 STATUS:RUNNING currentFloor3 nextFloor:[20] direction:UP
-Elevator 1 STATUS:RUNNING currentFloor4 nextFloor:[20] direction:UP
-Elevator 1 STATUS:CLOSE currentFloor:20 direction:UP
-2
-Enter start floor: 
-5
-Enter end floor: 
-1
-Elevator{elevatorStatus=IDLE, nextFloor=0, currentFloor=20, nextUpFloors=[], nextDownFloors=[], direction=NONE}
-Elevator 1 STATUS:RUNNING currentFloor: 18 nextFloors:[5, 1] direction:DOWN
-Elevator 1 STATUS:RUNNING currentFloor: 17 nextFloors:[5, 1] direction:DOWN
-Elevator 1 STATUS:RUNNING currentFloor: 16 nextFloors:[5, 1] direction:DOWN
+- Enter the number of elevators you want: <Enter a number between 1 and upto 10> 1
+- Enter the number of floors in the building: <Enter a number more than 1> 20
+- Select a choice from below: 
+- 1. Find out Status of elevator 
+- 2. Schedule an elevator 
+- 3. Exit the system(or press ctnrl + c 
+- <Enter choice> 2
+- Enter start floor: 
+- 2
+- Enter end floor: 
+- 20
+- Elevator 1 STATUS:RUNNING currentFloor1 nextFloor:[2, 20] direction:UP
+- Elevator 1 STATUS:RUNNING currentFloor2 nextFloor:[2, 20] direction:UP
+- Elevator 1 STATUS:OPEN currentFloor:2 direction:UP
+- Elevator 1 STATUS:CLOSE currentFloor:2 direction:UP
+- Elevator 1 STATUS:RUNNING currentFloor3 nextFloor:[20] direction:UP
+- Elevator 1 STATUS:RUNNING currentFloor4 nextFloor:[20] direction:UP
+- Elevator 1 STATUS:CLOSE currentFloor:20 direction:UP
+- 2
+- Enter start floor: 
+- 5
+- Enter end floor: 
+- 1
+- Elevator{elevatorStatus=IDLE, nextFloor=0, currentFloor=20, nextUpFloors=[], nextDownFloors=[], direction=NONE}
+- Elevator 1 STATUS:RUNNING currentFloor: 18 nextFloors:[5, 1] direction:DOWN
+- Elevator 1 STATUS:RUNNING currentFloor: 17 nextFloors:[5, 1] direction:DOWN
+- Elevator 1 STATUS:RUNNING currentFloor: 16 nextFloors:[5, 1] direction:DOWN
 
 <Elevator status>
 Enter elevator number: 
@@ -55,11 +55,11 @@ Elevator{elevatorStatus=IDLE, nextFloor=0, currentFloor=1, nextUpFloors=[], next
 
 Design
 =======
-Each elevator has a list of up and down floors associated with it.
-Initially all elevators at the 1st floor and in the idle state.
-When a person requests an elevator, the elevator control system decides which elevator the request should go to.
-In case of a single elevator system, the controller decides whether the request can be accommodated immediately 
-or does it have to wait till the other requests have been completed.
+- Each elevator has a list of up and down floors associated with it.
+- Initially all elevators at the 1st floor and in the idle state.
+- When a person requests an elevator, the elevator control system decides which elevator the request should go to.
+- In case of a single elevator system, the controller decides whether the request can be accommodated immediately 
+- or does it have to wait till the other requests have been completed.
 
 Single Elevator system
 -----------------------
