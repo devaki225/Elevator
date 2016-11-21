@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="52331" started-at="2016-11-21T07:56:45Z" finished-at="2016-11-21T07:57:38Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="52331" started-at="2016-11-21T07:56:45Z" finished-at="2016-11-21T07:57:38Z">
+      <class name="ElevatorTest">
+        <test-method status="PASS" signature="testMoveMultipleRequestsDifferentDirection()[pri:0, instance:ElevatorTest@6ad5c04e]" name="testMoveMultipleRequestsDifferentDirection" duration-ms="21004" started-at="2016-11-21T07:56:46Z" finished-at="2016-11-21T07:57:07Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ElevatorTest@6ad5c04e]" name="setUp" is-config="true" duration-ms="0" started-at="2016-11-21T07:56:46Z" finished-at="2016-11-21T07:56:46Z">
+        </test-method>
+        <test-method status="PASS" signature="testMoveMultipleRequestsSameDirection()[pri:0, instance:ElevatorTest@6ad5c04e]" name="testMoveMultipleRequestsSameDirection" duration-ms="13004" started-at="2016-11-21T07:57:07Z" finished-at="2016-11-21T07:57:20Z">
+        </test-method>
+        <test-method status="PASS" signature="testMoveSingleRequest()[pri:0, instance:ElevatorTest@6ad5c04e]" name="testMoveSingleRequest" duration-ms="18028" started-at="2016-11-21T07:57:20Z" finished-at="2016-11-21T07:57:38Z">
+        </test-method>
+      </class>
+      <class name="ElevatorControllerTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:ElevatorControllerTest@6ea6d14e]" name="setup" is-config="true" duration-ms="8" started-at="2016-11-21T07:56:45Z" finished-at="2016-11-21T07:56:45Z">
+        </test-method>
+        <test-method status="PASS" signature="testDecideNextElevatorDifferentDirection()[pri:0, instance:ElevatorControllerTest@6ea6d14e]" name="testDecideNextElevatorDifferentDirection" duration-ms="270" started-at="2016-11-21T07:56:45Z" finished-at="2016-11-21T07:56:45Z">
+        </test-method>
+        <test-method status="PASS" signature="testDecideNextElevatorSameDirection()[pri:0, instance:ElevatorControllerTest@6ea6d14e]" name="testDecideNextElevatorSameDirection" duration-ms="2" started-at="2016-11-21T07:56:45Z" finished-at="2016-11-21T07:56:46Z">
+        </test-method>
+        <test-method status="PASS" signature="testDecideNextElevatorSingle()[pri:0, instance:ElevatorControllerTest@6ea6d14e]" name="testDecideNextElevatorSingle" duration-ms="0" started-at="2016-11-21T07:56:46Z" finished-at="2016-11-21T07:56:46Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

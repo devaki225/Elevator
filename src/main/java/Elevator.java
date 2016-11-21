@@ -8,7 +8,6 @@ import java.util.TreeSet;
  */
 public class Elevator implements Runnable {
     private ElevatorStatusEnum elevatorStatus;
-    private int nextFloor;
     private int currentFloor;
     private TreeSet<Integer> nextUpFloors;
     TreeSet<Integer> nextDownFloors;
@@ -18,7 +17,6 @@ public class Elevator implements Runnable {
 
     public Elevator(int elevatorNum) {
         elevatorStatus = ElevatorStatusEnum.IDLE; //initialize to stationary
-        nextFloor = 0;
         nextUpFloors = new TreeSet<>();
         nextDownFloors = new TreeSet<Integer>(Collections.reverseOrder());
         currentFloor = 0;
@@ -65,7 +63,7 @@ public class Elevator implements Runnable {
 
     /***
      * This method will be responsible for the movement of elevators. The elevator will move up and down depending upon which set has values
-     * Once it has serviced all the requests, it will go to the IDLE state and wait the floor where the last request was serviced
+     * Once it has serviced all the requests, it will go to the IDLE state and wait at the floor where the last request was serviced
      */
     public synchronized void move() {
         try {

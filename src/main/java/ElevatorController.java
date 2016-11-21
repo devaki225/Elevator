@@ -53,7 +53,7 @@ public class ElevatorController {
                     } else if ((directionEnum == DirectionEnum.UP) && (elevator.getDirection() == DirectionEnum.UP)) {
                         currDiff = startFloor - elevator.getCurrentFloor();
                         //We want to be sure that the elevator can process the current request.
-                        //So any elevator has to be atleast constDiff away from the start floor if in a running state
+                        //So any elevator has to be more than constDiff away from the start floor if in a running state
                         if (currDiff <= constDiff) {
                             continue;
                         }

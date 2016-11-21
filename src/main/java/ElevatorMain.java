@@ -38,6 +38,7 @@ public class ElevatorMain {
                 case 3:
                     System.out.println("Exiting");
                     start=false;
+                    break;
                 default:
                     System.out.println("Enter a valid choice");
 
